@@ -12,6 +12,23 @@ python3 -m http.server 8765
 
 No build step, bundler, or package manager. Pure ES modules served as static files.
 
+## Git Workflow
+
+After completing any meaningful unit of work — a bug fix, a new feature, a refactor — commit and push immediately. Never leave work uncommitted at the end of a session.
+
+```bash
+git add <files>
+git commit -m "short imperative summary
+
+Optional longer explanation if needed."
+git push
+```
+
+Commit message rules:
+- First line: imperative, ≤72 chars (e.g. `Add shield powerup to player`)
+- Reference what changed and why, not just what files were touched
+- One logical change per commit — don't batch unrelated changes
+
 ## Architecture
 
 ### Entry Point & Game Loop
